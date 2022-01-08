@@ -16,6 +16,8 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     color: #8491A3;
+    flex-direction: row;
+    align-items: center;
 }
 
 header h1 {
@@ -35,6 +37,9 @@ header a {
 
 header nav {
     margin: 7px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 header nav ul {
@@ -51,15 +56,27 @@ header nav ul li a {
     font-size: 1.55vw;
     border-bottom: 3px solid;
     display: inline-block;
+    transition: all 0.4s ease-in;
+}
+header nav ul li a:hover {
+    background-color: #8491A3;
+    background-size: 100% 100%;
+    color: #BCEBCB;
+    border-radius: 5px;
 }
 
 .hero {
     background-image: url("../images/hero.jpg");
     background-position: center;
     display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
     margin-bottom: 100px;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    min-height: 25vh;
+    padding: 2% 6%;
+    text-align: right;
 }
 
 .hero h2 {
@@ -67,40 +84,55 @@ header nav ul li a {
     font-size: 55px;
     color: #BCEBCB;
     background-color: #8491A3;
-    padding: 0 100px 0 50px;
-    margin: 0 100px;
+    padding: 0 100px;
+    margin: 0;
 }
 
-.section-title {
-    font-size: 55px;
+main {
+    max-width: 88%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.section-info {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.section-info h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 3px solid;
+    font-size: 4vw;
     color: #8491A3;
     margin-bottom: 35px;
-    padding: 0 10px 20px 10px;
-    display: inline-block;
-    border-right: 3px solid;
+    padding-right: 15px;
     font-weight: lighter;
 }
 
-.about-me {
-    text-align: left;
-    float: left;
-    margin: 0 25px 0 20px;
+.section-info > div {
+    flex: 0 0 77%;
 }
 
-.about-me img {
+.section-info img {
     width: 15%;
     border-radius: 15px;
     border: 5px solid #BCEBCB;
     
 }
 
-.about-me p {
+.section-info p {
     line-height: 1.7;
     color: #8491a3;
-    width: 80%;
     font-size: 20px;
-    margin: 0 0 0 0;
-    float: right;
+    margin-bottom: 20px;
 }
 
 .work {
