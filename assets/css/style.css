@@ -122,10 +122,8 @@ main {
 }
 
 .section-info img {
-    width: 15%;
-    border-radius: 15px;
-    border: 5px solid #BCEBCB;
-    
+    width: 100%;
+    border-radius: 15px;    
 }
 
 .section-info p {
@@ -135,32 +133,10 @@ main {
     margin-bottom: 20px;
 }
 
-.work {
-    text-align: left;
-    float: left;
-    margin: 0 20px 0 20px;
+.box-item {
+
 }
 
-.work p {
-    line-height: 1.7;
-    color: #8491a3;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 0 0 0;
-    float: right;
-}
+.run-buddy {
 
-.contact-me {
-    text-align: left;
-    float: left;
-    margin: 0 20px 0 20px;
-}
-
-.contact-me p {
-    line-height: 1.7;
-    color: #8491a3;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 0 0 0;
-    float: right;
 }
