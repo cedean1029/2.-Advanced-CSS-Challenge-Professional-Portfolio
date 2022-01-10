@@ -123,7 +123,8 @@ main {
 
 .section-info img {
     width: 100%;
-    border-radius: 15px;    
+    border-radius: 15px;
+    border: 5px solid #BCEBCB;
 }
 
 .section-info p {
@@ -134,7 +135,39 @@ main {
 }
 
 .box-item {
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+}
 
+.box-item name {
+    background-color: #BCEBCB;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    padding-right: 125px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 12px;
+    border-radius: 0 5px 5px 0;
+} 
+
+.box-item h3 {
+    position: fixed;
+    background-color: #BCEBCB;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    line-height: 2.2;
+}
+
+.box-item span {
+    position: fixed;
+    background-color: #BCEBCB;
+    position: absolute;
+    bottom: 1px;
+    left: 20px;
+    line-height: 1.6;
 }
 
 .run-buddy {
