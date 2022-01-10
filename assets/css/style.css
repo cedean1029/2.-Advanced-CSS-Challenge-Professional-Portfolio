@@ -4,20 +4,30 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #b1ddca;
+    --secondary-color: #8491A3;
+    --tertiary-color: #39a6b2;
+}
+
 body {
-    color: #8491a3;
+    color: var(--secondary-color);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
     padding: 20px 35px;
-    background-color: #BCEBCB;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    color: #8491A3;
+    color: var(--secondary-color);
     flex-direction: row;
     align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 header h1 {
@@ -32,7 +42,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: #8491A3;
+    color: var(--secondary-color);
 }
 
 header nav {
@@ -59,7 +69,7 @@ header nav ul li a {
     transition: all 0.4s ease-in;
 }
 header nav ul li a:hover {
-    background-color: #8491A3;
+    background-color: var(--secondary-color);
     background-size: 100% 100%;
     color: #BCEBCB;
     border-radius: 5px;
@@ -77,15 +87,23 @@ header nav ul li a:hover {
     min-height: 25vh;
     padding: 2% 6%;
     text-align: right;
+    justify-content: space-between;
 }
 
 .hero h2 {
     font-style: italic;
     font-size: 55px;
     color: #BCEBCB;
-    background-color: #8491A3;
+    background-color: var(--secondary-color);
     padding: 0 100px;
     margin: 0;
+}
+
+.hero img {
+    width: 12%;
+    transform: rotate(-20deg);
+    border: 10px solid var(--secondary-color);
+    border-radius: 5px;
 }
 
 main {
@@ -111,7 +129,7 @@ main {
     text-align: right;
     border-right: 3px solid;
     font-size: 4vw;
-    color: #8491A3;
+    color: var(--secondary-color);
     margin-bottom: 35px;
     padding-right: 15px;
     font-weight: lighter;
@@ -129,9 +147,14 @@ main {
 
 .section-info p {
     line-height: 1.7;
-    color: #8491a3;
+    color: var(--secondary-color);
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.section-info p a {
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 .box-item {
@@ -170,6 +193,23 @@ main {
     line-height: 1.6;
 }
 
-.run-buddy {
-
+.contact-me p {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--secondary-color);
+    flex-direction: row;
+    align-items: center;
 }
+
+.contact-me p a {
+    transition: all 0.4s ease-in;
+}
+
+.contact-me p a:hover {
+    background-color: var(--secondary-color);
+    background-size: 100% 100%;
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
