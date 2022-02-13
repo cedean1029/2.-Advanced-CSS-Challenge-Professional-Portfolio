@@ -193,6 +193,49 @@ main {
     line-height: 1.6;
 }
 
+.additional-work img {
+    width: 50%;
+    border-radius: 15px;
+    border: 5px solid #BCEBCB;
+}
+
+.additional-work {
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.additional-work name {
+    background-color: #BCEBCB;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    padding-right: 185px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius: 0 5px 5px 0;
+    font-size: 12px;
+} 
+
+.additional-work h3 {
+    position: fixed;
+    background-color: #BCEBCB;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    line-height: 2.2;
+}
+
+.additional-work span {
+    position: fixed;
+    background-color: #BCEBCB;
+    position: absolute;
+    bottom: 3px;
+    left: 20px;
+    line-height: 2;
+}
+
 .contact-me p {
     display: flex;
     justify-content: space-between;
